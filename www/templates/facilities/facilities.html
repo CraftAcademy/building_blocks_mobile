@@ -1,14 +1,33 @@
 <ion-view title='<img class="title-image" src="../img/logosmall.png" />'>
   <ion-content>
-    <span ng-if="facilities" ng-repeat="facility in facilities">
-      <div class="row" ng-if="($index = $even)">
+    <div class="row">
+    <div ng-if="facilities" ng-repeat="facility in facilities">
+      <div  ng-if="($index = $odd)">
         <div class=“col”>
-        <h4>{{facility.name}}{{ $index + 1 }}</h4>
-        <h6>{{facility.description}}</h6>
-        <p>{{facility.rules}}</p>
-        </div>
+          <div class="card" style="width: 168px;">
+        <h4>&nbsp{{facility.name}}</h4>
+        <h6>&nbsp{{facility.description}}</h6>
+        <p>&nbsp{{facility.rules}}</p>
 
+          </div>
+        </div>
       </div>
-    </span>
+    </div>
+    </div>
+
+    <div class="row">
+      <div ng-if="facilities" ng-repeat="facility in facilities">
+        <div  ng-if="($index = $even)">
+          <div class=“col”>
+            <div class="card" style="width: 168px;">
+            <h4>&nbsp{{facility.name}}</h4>
+            <h6>&nbsp{{facility.description}}</h6>
+            <p>&nbsp{{facility.rules}}</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </ion-content>
 </ion-view>
