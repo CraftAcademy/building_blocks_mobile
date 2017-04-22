@@ -1,11 +1,16 @@
 <ion-view title="Building Blockz">
   <ion-content>
+    <div class="index">
+      <img src="../img/index_720.jpg" alt="building-blockz">
+      <div class="text" <h1>Brf Kungsklippan</h1>
+      </div>
+    </div>
     <div class="col" ng-if="news" ng-repeat="news in news | limitTo:-5 | orderBy:'time':true">
       <ion-list>
         <ion-item>
-        <h3>{{news.title}}</h3>
-        <p>{{news.date}}</p>
-        <p>{{news.description}}</p>
+          <h2>{{news.title}}</h2>
+          <p>{{news.date}} <br>
+          {{news.description}}</p>
         </ion-item>
       </ion-list>
     </div>

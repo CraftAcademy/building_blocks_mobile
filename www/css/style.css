@@ -4,3 +4,31 @@
     margin: 10px;
     border: 1px solid #E7E7E7;
 }
+
+.top-nav-bar {
+    color: #FFF ;
+    background-color: #23c1a0 ;
+}
+
+img {
+    max-height: 98%;
+    max-width: 98%;
+}
+
+.index {
+    padding-top: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center
+}
+
+.text {
+    color: #FFF ;
+    font-size: 30px ;
+    left: 0;
+    position:absolute;
+    text-align:center;
+    top: 85px;
+    width: 100%
+}
