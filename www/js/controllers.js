@@ -5,6 +5,10 @@ angular.module('building-blocks.controllers', [])
   $scope.news = News.query();
 })
 
+.controller('FacilityController', function($scope, Facility) {
+   $scope.facilities = Facility.query();
+})
+
 .controller('HelpRequestController', function($scope, $location, HelpRequest) {
   $scope.error = null;
   $scope.help_request = {};

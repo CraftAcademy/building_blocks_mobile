@@ -48,11 +48,7 @@ angular.module('building-blocks', ['ionic', 'building-blocks.controllers', 'buil
           controller: 'HelpRequestController'
         }
       }
-    });
-    $urlRouterProvider.otherwise('/tab/home');
-
-    }
-  })
+    })
 
   .state('tab.facilities', {
     url: '/facilities',

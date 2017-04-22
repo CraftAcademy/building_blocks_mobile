@@ -1,9 +1,13 @@
 <ion-view title="Building Blockz Facilities">
   <ion-content>
     <div class="col" ng-if="facilities" ng-repeat="facility in facilities">
-      <h2>{{facility.name}}</h2>
-      <h4>{{facility.description}}</h4>
-      <p>{{facility.rules}}</p>
+      <ion-list>
+        <ion-item>
+        <h2>{{facility.name}}</h2>
+        <h4>{{facility.description}}</h4>
+        <p>{{facility.rules}}</p>
+        </ion-item>
+      </ion-list>
     </div>
   </ion-content>
 </ion-view>
