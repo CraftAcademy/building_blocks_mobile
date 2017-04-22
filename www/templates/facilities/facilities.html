@@ -1,13 +1,14 @@
-<ion-view title="Facilities">
+<ion-view title='<img class="title-image" src="../img/logosmall.png" />'>
   <ion-content>
-    <div class="col" ng-if="facilities" ng-repeat="facility in facilities">
-      <ion-list>
-        <ion-item>
-        <h2>{{facility.name}}</h2>
-        <h4>{{facility.description}}</h4>
+    <span ng-if="facilities" ng-repeat="facility in facilities">
+      <div class="row" ng-if="($index = $even)">
+        <div class=“col”>
+        <h4>{{facility.name}}{{ $index + 1 }}</h4>
+        <h6>{{facility.description}}</h6>
         <p>{{facility.rules}}</p>
-        </ion-item>
-      </ion-list>
-    </div>
+        </div>
+
+      </div>
+    </span>
   </ion-content>
 </ion-view>

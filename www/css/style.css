@@ -11,12 +11,12 @@
 }
 
 img {
-    max-height: 98%;
-    max-width: 98%;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .index {
-    padding-top: 7px;
+    padding-top: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -31,4 +31,14 @@ img {
     text-align:center;
     top: 85px;
     width: 100%
+}
+
+title-image {
+  margin-top: 0px;
+  height: 25px;
+}
+
+.card
+{
+  margin-bottom: -15px !important;
 }
