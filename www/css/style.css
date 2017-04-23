@@ -1,9 +1,4 @@
 /* Empty. Add your own CSS if you like */
-.ion-content {
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid #E7E7E7;
-}
 
 .top-nav-bar {
     color: #FFF ;
@@ -45,4 +40,26 @@ title-image {
 
 }
 
+.title {
+  color: #303030 ;
+  padding-top: 5px;
+  text-align: center;
+}
 
+.news-title {
+  font-size: 17px ;
+  text-align: center;
+  padding-top: 10px ;
+  margin-bottom: -20px;
+}
+
+.brf-text {
+  text-align: center;
+  padding: 15px;
+}
+
+.fac-icon {
+  padding-left: 50px;
+  margin-bottom: 5px;
+  height: 65px;
+}
