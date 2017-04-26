@@ -1,4 +1,4 @@
-angular.module('building-blocks', ['ionic', 'building-blocks.controllers', 'building-blocks.services', 'ngResource'])
+angular.module('building-blocks', ['ionic', 'building-blocks.controllers', 'building-blocks.services', 'building-blocks.directives', 'ngResource'])
     .constant('API_URL', 'https://building-blockz.herokuapp.com/api/v1')
 
 .run(function($ionicPlatform) {
@@ -56,6 +56,17 @@ angular.module('building-blocks', ['ionic', 'building-blocks.controllers', 'buil
       'tab-facilities': {
         templateUrl: 'templates/facilities/facilities.html',
         controller: 'FacilityController'
+      }
+    }
+  })
+
+  .state('tab.schedules', {
+    url: '/schedules',
+    views: {
+      'tab-schedules': {
+        templateUrl: 'templates/schedules/schedules.html',
+        controller: 'ScheduleController',
+        directive: 'schedules'
       }
     }
   })

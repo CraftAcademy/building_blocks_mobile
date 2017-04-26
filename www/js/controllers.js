@@ -6,7 +6,11 @@ angular.module('building-blocks.controllers', [])
 })
 
 .controller('FacilityController', function($scope, Facility) {
-   $scope.facilities = Facility.query();
+  $scope.facilities = Facility.query();
+})
+
+.controller("ScheduleController", function($scope) {
+    // $scope.day = moment();
 })
 
 .controller('HelpRequestController', function($scope, $location, HelpRequest) {

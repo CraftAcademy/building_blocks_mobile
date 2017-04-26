@@ -63,3 +63,8 @@ title-image {
   margin-bottom: 5px;
   height: 65px;
 }
+
+.message {
+  background-color: #23c1a0;
+  color: white; 
+}
